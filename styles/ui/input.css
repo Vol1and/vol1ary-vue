@@ -1,0 +1,31 @@
+.b-input-group, .b-textarea, .b-select {
+    @apply border-primary/70 border-[1px] focus:border-primary hover:border-primary
+     rounded-[6px] bg-white p-[13px] h-56 relative;
+
+    &:focus {
+         box-shadow: 0 0 0 2px rgb(39, 20, 96 / 10%);
+    }
+}
+.b-input, .b-select, .b-textarea {
+    @apply outline-none t-p2 text-black placeholder-additional-3/30 w-full;
+}
+
+.b-input__password {
+    > .b-input {
+        @apply p-0 border-0;
+
+        &:focus {
+            box-shadow: 0;
+         }
+
+    }
+}
+
+.b-label {
+    @apply absolute z-[5] t-p2 left-10 top-14 text-primary/50 px-4 transition duration-[300];
+
+    &--active {
+         @apply absolute t-p3  bg-white text-primary/60 px-4;
+         transform: translate(-4px, -20px) ;
+    }
+}

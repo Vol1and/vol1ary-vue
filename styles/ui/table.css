@@ -1,0 +1,36 @@
+.b-table {
+    @apply bg-white border-purple border-[1px] w-full text-primary w-full;
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+
+    table {
+        @apply w-full;
+    }
+
+    &__header {
+        @apply border-b-[3px] border-b-purple;
+
+        &-cell {
+             @apply text-left px-16 py-10 t-p1 font-semibold bg-purple/40;
+
+            svg {
+                @apply h-26;
+            }
+         }
+     }
+    &__row {
+        @apply h-48 w-full t-p2 cursor-pointer select-none;
+
+        &:hover {
+            @apply bg-purple/20;
+         }
+
+        &_active {
+            @apply bg-purple/30;
+         }
+
+        &-cell {
+            @apply px-16 py-[7px] border-b-[1px] border-b-purple
+            whitespace-nowrap overflow-x-hidden overflow-ellipsis;
+         }
+     }
+}

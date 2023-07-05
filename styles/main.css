@@ -1,0 +1,16 @@
+@import './typography/text.css';
+@import './typography/links.css';
+@import './tailwind.css';
+@import "ui/button.css";
+@import "ui/modal.css";
+@import "ui/input.css";
+@import "ui/table.css";
+@import "ui/datepicker.css";
+@import 'layout.css';
+@import 'form/form.css';
+@import 'form/task-picker.css';
+@import "record.css";
+
+body {
+    @apply bg-additional-2/60;
+}

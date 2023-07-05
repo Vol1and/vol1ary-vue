@@ -1,0 +1,73 @@
+.card {
+  @apply p-16 md:p-24 lg:p-30 bg-white rounded border-primary/20 border-[1px];
+  box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+}
+
+
+.form {
+
+  &__week {
+
+    &-body {
+        @apply flex gap-16 mb-16;
+     }
+    &-first {
+        @apply flex flex-col gap-16 min-w-[300px];
+     }
+    &-second {
+        @apply flex flex-col gap-16 w-full;
+     }
+     &-textarea {
+        @apply min-h-[140px];
+      }
+     &-end {
+        @apply text-20 mb-8
+      }
+   }
+
+  &__workout {
+       @apply w-[1000px];
+
+    &-body {
+         @apply flex gap-40 mb-20;
+     }
+
+    &-inputs {
+       @apply w-[300px] flex flex-col gap-20;
+
+       textarea {
+           @apply min-h-[300px]
+       }
+     }
+
+    &-exercises {
+        @apply  flex flex-col gap-20;
+     }
+   }
+
+  &__record {
+   @apply w-[1200px];
+
+      &-body {
+        @apply flex gap-20 mb-20;
+       }
+
+      &-left {
+        @apply w-[350px] flex flex-col gap-20;
+      }
+      &-right {
+           @apply w-[500px] flex flex-col gap-20;
+       }
+      &-textarea {
+        @apply min-h-[56px] h-[250px] mb-16;
+       }
+   }
+
+   &__tracker, &__exercise {
+    @apply flex flex-col gap-20 w-[550px];
+    }
+
+    &__sprint {
+         @apply flex flex-col gap-20 w-[1500px];
+     }
+}

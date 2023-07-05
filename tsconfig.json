@@ -22,20 +22,19 @@
     "sourceMap": true,
     "paths": {
       "@/*": [
-        "./src/*"
+        "./*"
       ]
     },
     "skipLibCheck": true,
     "noEmit": true,
-    "incremental": true
   },
   "include": [
-    "./src/**/*",
-    "./tests/unit/**/*"
+    "**/*.ts",
+    "**/*.d.ts",
+    "**/*.vue"
   ],
   "exclude": [
-    "./dist",
+    "dist",
     "node_modules",
-    "./config"
   ]
 }
